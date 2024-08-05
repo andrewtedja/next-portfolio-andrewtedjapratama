@@ -15,7 +15,10 @@ const config: Config = {
       },
       fontFamily: {
         primary: ["Poppins"]
-      }
+      },
+      boxShadow: {
+        'left': '-4px 0px 8px rgba(0, 0, 0, 0.2)', 
+      },
     },
   },
   plugins: [],

@@ -1,10 +1,14 @@
 import React from 'react';
 import { Bars3Icon } from "@heroicons/react/20/solid"
 
-const Nav = () => {
+interface Props {
+  openNav: () => void;
+}
+
+const Nav = ({openNav}:Props) => {
   return (
     <header className="w-[100%] h-[10vh] shadow-md bg-[#FCFCFC]">
-    <div className="max-w-[85%] mx-auto h-full flex items-center justify-between">
+    <div className="max-w-[80%] mx-auto h-full flex items-center justify-between">
       <h1 className="text-3xl font-bold">
         Andrew
         <span className="text-blue-500 text-4xl">
@@ -19,7 +23,7 @@ const Nav = () => {
           <li><a href="#skills" className="nav-link">Skills</a></li>
           <li><a href="#resume" className="nav-link">Resume</a></li>
         </ul>
-        <div>
+        <div onClick={openNav}>
           <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-black"/>
         </div>
       </nav>
