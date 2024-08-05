@@ -8,3 +8,15 @@ body {
     background-color: #dddddd;
     font-family: 'Poppins';
 }
+
+@layer components {
+    .nav-link {
+        @apply relative font-semibold text-black hover:text-blue-500 transition-colors text-[17px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px]
+        after:bg-blue-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden
+    }
+
+    .nav-link-mobile {
+        @apply relative mb-[2rem] font-semibold text-black hover:text-blue-500 transition-colors text-[27px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px]
+        after:bg-blue-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center
+    }
+}

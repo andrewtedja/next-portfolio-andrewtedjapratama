@@ -1,23 +1,27 @@
 import React from 'react';
+import { Bars3Icon } from "@heroicons/react/20/solid"
 
 const Nav = () => {
   return (
-    <header className="w-full h-[10vh] shadow-md bg-[#FCFCFC]">
-    <div className="container mx-auto h-full flex items-center justify-between px-[6rem]">
-      <h1 className="text-xl font-bold">
+    <header className="w-[100%] h-[10vh] shadow-md bg-[#FCFCFC]">
+    <div className="max-w-[85%] mx-auto h-full flex items-center justify-between">
+      <h1 className="text-3xl font-bold">
         Andrew
-        <span className="text-blue-500">
-            .
+        <span className="text-blue-500 text-4xl">
+        .
         </span>
         dev
       </h1>
-      <nav>
-        <ul className="flex space-x-10">
-          <li><a href="#home" className="hover:text-blue-500 transition-colors text-[14px]">Home</a></li>
-          <li><a href="#projects" className="hover:text-blue-500 transition-colors text-[14px]">Projects</a></li>
-          <li><a href="#skills" className="hover:text-blue-500 transition-colors text-[14px]">Skills</a></li>
-          <li><a href="#resume" className="hover:text-blue-500 transition-colors text-[14px]">Resume</a></li>
+      <nav className="flex ml-auto">
+        <ul className="flex space-x-11">
+          <li ><a href="#home" className="nav-link ">Home</a></li>
+          <li><a href="#projects" className="nav-link">Projects</a></li>
+          <li><a href="#skills" className="nav-link">Skills</a></li>
+          <li><a href="#resume" className="nav-link">Resume</a></li>
         </ul>
+        <div>
+          <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-black"/>
+        </div>
       </nav>
     </div>
   </header>
