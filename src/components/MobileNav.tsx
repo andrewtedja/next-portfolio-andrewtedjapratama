@@ -7,8 +7,7 @@ interface Props {
 }
 
 const MobileNav = ({nav, closeNav}: Props) => {
-
-    const navAnimation = nav?'translate-x-0':'translate-x-[100%]';
+    const navAnimation = nav ? 'translate-x-0' : 'translate-x-[100%]';
     const overlayVisibility = nav ? 'block' : 'hidden';
     const navRef = useRef<HTMLDivElement>(null);
     const overlayRef = useRef<HTMLDivElement>(null);
@@ -16,8 +15,7 @@ const MobileNav = ({nav, closeNav}: Props) => {
     const [activeNav, setActiveNav] = useState('#home');
 
     const handleClickOutside = (event: MouseEvent) => {
-        if (navRef.current && !navRef.current.contains(event.target as Node) && overlayRef.current && !overlayRef.current.contains(event.target as Node)) 
-        {
+        if (navRef.current && !navRef.current.contains(event.target as Node) && overlayRef.current && !overlayRef.current.contains(event.target as Node)) {
             closeNav();
         }
     };
@@ -44,23 +42,45 @@ const MobileNav = ({nav, closeNav}: Props) => {
                 className={`fixed top-0 right-0 h-[100vh] w-[280px] z-[10000] bg-[#FCFCFC] shadow-left transform transition-transform duration-300 rounded ${navAnimation}`}
             >
                 <div className="h-[100vh] flex flex-col items-start ml-5">
-                    <div className={`nav-link-mobile mt-[5rem] ${activeNav === '#home' ? 'active' : ''}`}
-                        onClick={() => handleNavClick('#home')}>
-                        Home
-                    </div>
-                    <div className={`nav-link-mobile ${activeNav === '#projects' ? 'active' : ''}`}
-                        onClick={() => handleNavClick('#projects')}>
-                        Projects
-                    </div>
-                    <div className={`nav-link-mobile ${activeNav === '#skills' ? 'active' : ''}`}
-                        onClick={() => handleNavClick('#skills')}>
-                        Skills
-                    </div>
-                    <div className={`nav-link-mobile ${activeNav === '#resume' ? 'active' : ''}`}
-                        onClick={() => handleNavClick('#resume')}>
-                        Resume
-                    </div>
-                </div>
+                    <ul className="flex flex-col mt-[5rem] space-y-4">
+                        <li>
+                            <a
+                                href="#home"
+                                className={`nav-link-mobile ${activeNav === '#home' ? 'active' : ''}`}
+                                onClick={() => handleNavClick('#home')}
+                            >
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#projects"
+                                className={`nav-link-mobile ${activeNav === '#projects' ? 'active' : ''}`}
+                                onClick={() => handleNavClick('#projects')}
+                            >
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#skills"
+                                className={`nav-link-mobile ${activeNav === '#skills' ? 'active' : ''}`}
+                                onClick={() => handleNavClick('#skills')}
+                            >
+                                Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#resume"
+                                className={`nav-link-mobile ${activeNav === '#resume' ? 'active' : ''}`}
+                                onClick={() => handleNavClick('#resume')}
+                            >
+                                Resume
+                            </a>
+                        </li>
+                    </ul>
+                </div>  
                 <div onClick={closeNav} className="absolute cursor-pointer top-[1.5rem] left-[1rem] w-[2rem] h-[2rem] text-black">
                     <XMarkIcon className="w-full h-full" />
                 </div>
