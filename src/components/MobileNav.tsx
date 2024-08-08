@@ -1,5 +1,5 @@
 import { XMarkIcon } from '@heroicons/react/20/solid'
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 interface Props {
     nav: boolean;
@@ -13,11 +13,18 @@ const MobileNav = ({nav, closeNav}: Props) => {
     const navRef = useRef<HTMLDivElement>(null);
     const overlayRef = useRef<HTMLDivElement>(null);
 
+    const [activeNav, setActiveNav] = useState('#home');
+
     const handleClickOutside = (event: MouseEvent) => {
-        if (navRef.current && !navRef.current.contains(event.target as Node) &&
-            overlayRef.current && !overlayRef.current.contains(event.target as Node)) {
+        if (navRef.current && !navRef.current.contains(event.target as Node) && overlayRef.current && !overlayRef.current.contains(event.target as Node)) 
+        {
             closeNav();
         }
+    };
+
+    const handleNavClick = (section: string) => {
+        setActiveNav(section);
+        closeNav();
     };
 
     useEffect(() => {
@@ -29,18 +36,30 @@ const MobileNav = ({nav, closeNav}: Props) => {
         <>
             <div
                 ref={overlayRef}
-                className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-30 ${overlayVisibility} z-[9999]`}
+                className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 ${overlayVisibility} z-[9999]`}
                 onClick={closeNav}
             ></div>
             <div
                 ref={navRef}
-                className={`fixed top-0 right-0 h-[100vh] w-[280px] z-[10000] bg-[#FCFCFC] shadow-left transform transition-transform duration-300 ${navAnimation}`}
+                className={`fixed top-0 right-0 h-[100vh] w-[280px] z-[10000] bg-[#FCFCFC] shadow-left transform transition-transform duration-300 rounded ${navAnimation}`}
             >
                 <div className="h-[100vh] flex flex-col items-start ml-5">
-                    <div className='nav-link-mobile mt-[5rem]'>Home</div>
-                    <div className='nav-link-mobile'>Projects</div>
-                    <div className='nav-link-mobile'>Skills</div>
-                    <div className='nav-link-mobile'>Resume</div>
+                    <div className={`nav-link-mobile mt-[5rem] ${activeNav === '#home' ? 'active' : ''}`}
+                        onClick={() => handleNavClick('#home')}>
+                        Home
+                    </div>
+                    <div className={`nav-link-mobile ${activeNav === '#projects' ? 'active' : ''}`}
+                        onClick={() => handleNavClick('#projects')}>
+                        Projects
+                    </div>
+                    <div className={`nav-link-mobile ${activeNav === '#skills' ? 'active' : ''}`}
+                        onClick={() => handleNavClick('#skills')}>
+                        Skills
+                    </div>
+                    <div className={`nav-link-mobile ${activeNav === '#resume' ? 'active' : ''}`}
+                        onClick={() => handleNavClick('#resume')}>
+                        Resume
+                    </div>
                 </div>
                 <div onClick={closeNav} className="absolute cursor-pointer top-[1.5rem] left-[1rem] w-[2rem] h-[2rem] text-black">
                     <XMarkIcon className="w-full h-full" />

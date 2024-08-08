@@ -19,4 +19,8 @@ body {
         @apply relative mb-[2rem] font-medium text-black hover:text-blue-500 transition-colors text-[20px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px]
         after:bg-blue-500 after:w-[250px] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-top-left cursor-pointer
     }
+
+    .nav-link.active, .nav-link-mobile.active {
+        @apply text-blue-500 after:scale-x-100;
+    }
 }
