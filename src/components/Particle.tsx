@@ -34,7 +34,7 @@ const Particle = () => {
                         //     value: "#0d47a1",
                         //   },
                     },
-                    fpsLimit: 140,
+                    fpsLimit: 144,
                     interactivity: {
                         events: {
                             onClick: {
@@ -52,20 +52,20 @@ const Particle = () => {
                                 quantity: 4,
                             },
                             repulse: {
-                                distance: 200,
+                                distance: 100,
                                 duration: 0.4,
                             },
                         },
                     },
                     particles: {
                         color: {
-                            value: "#666666", // Particle color
+                            value: "#666666", 
                         },
                         links: {
                             color: "#666666", 
-                            distance: 100, 
+                            distance: 350, 
                             enable: true,
-                            opacity: 0.3, 
+                            opacity: 0.1, 
                             width: 2, 
                         },
                         move: {
@@ -75,21 +75,21 @@ const Particle = () => {
                                 default: "bounce",
                             },
                             random: false,
-                            speed: 0.7, 
+                            speed: 2, 
                             straight: false,
                         },
                         number: {
                             density: {
                                 enable: true,
-                                area: 1500,
+                                area: 1000,
                             },
-                            value: 40,
+                            value: 40
                         },
                         opacity: {
-                            value: 0.5,
+                            value: 0.2  ,
                         },
                         shape: {
-                            type: "circle",
+                            type: "circle", 
                         },
                         size: {
                             value: { min: 2, max: 3 },

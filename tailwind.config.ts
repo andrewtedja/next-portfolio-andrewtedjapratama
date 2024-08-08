@@ -19,6 +19,22 @@ const config: Config = {
       boxShadow: {
         'left': '-4px 0px 8px rgba(0, 0, 0, 0.2)', 
       },
+      keyframes: {
+        animate: {
+          '0%': {
+            borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%',
+          },
+          '50%': {
+            borderRadius: '30% 60% 70% 40%/50% 60% 30% 60%',
+          },
+          '100%': {
+            borderRadius: '60% 40% 30% 70%/60% 30% 70% 40%',
+          },
+        },
+      },
+      animation: {
+        animate: 'animate 5s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
