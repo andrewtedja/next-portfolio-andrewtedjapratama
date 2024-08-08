@@ -12,9 +12,9 @@ const Nav = ({openNav}:Props) => {
   }
 
   return (
-    <header className="w-[100%] h-[10vh] shadow-md bg-[#FCFCFC]">
+    <header className="w-[100%] h-[10vh] shadow-md bg-[#FCFCFC] z-10 relative">
     <div className="max-w-[80%] mx-auto h-full flex items-center justify-between">
-      <h1 className="text-3xl font-bold">
+      <h1 className="text-3xl font-bold cursor-pointer">
         Andrew
         <span className="text-blue-500 text-4xl">
         .
@@ -23,7 +23,7 @@ const Nav = ({openNav}:Props) => {
       </h1>
       <nav className="flex ml-auto">
         <ul className="flex space-x-11">
-        <li>
+          <li>
               <a href="#home" className={`nav-link ${activeNav === '#home' ? 'active' : ''}`} onClick={() => handleNavClick('#home')}>
                 Home
               </a>
