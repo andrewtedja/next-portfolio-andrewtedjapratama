@@ -42,7 +42,7 @@ const Particle = () => {
                                 mode: "push",
                             },
                             onHover: {
-                                enable: false,
+                                enable: true,
                                 mode: "repulse",
                             },
                             resize: true,
@@ -63,7 +63,7 @@ const Particle = () => {
                         },
                         links: {
                             color: "#666666", 
-                            distance: 350, 
+                            distance: 300, 
                             enable: true,
                             opacity: 0.1, 
                             width: 2, 
@@ -75,7 +75,7 @@ const Particle = () => {
                                 default: "bounce",
                             },
                             random: false,
-                            speed: 2, 
+                            speed: 1, 
                             straight: false,
                         },
                         number: {
@@ -86,7 +86,7 @@ const Particle = () => {
                             value: 40
                         },
                         opacity: {
-                            value: 0.2  ,
+                            value: 0.2,
                         },
                         shape: {
                             type: "circle", 
