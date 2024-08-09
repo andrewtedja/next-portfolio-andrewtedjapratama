@@ -35,7 +35,7 @@ const Nav = ({ openNav, closeNav }: Props) => {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full h-[10vh] bg-[#FCFCFC] z-10 transition-shadow duration-300 ${isScrolled ? 'shadow-md bg-opacity-90' : ''}`}>
+    <header className={`fixed top-0 w-full h-[10vh] bg-[#FFFFFF] z-10 transition-shadow duration-300 ${isScrolled ? 'shadow-md bg-opacity-90' : ''}`}>
       <div className="max-w-[80%] mx-auto h-full flex items-center justify-between">
         <h1 className="text-3xl font-bold cursor-pointer">
           Andrew

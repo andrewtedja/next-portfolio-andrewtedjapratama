@@ -35,6 +35,9 @@ const config: Config = {
       animation: {
         animate: 'animate 5s ease-in-out infinite',
       },
+      screens: {
+        'xs': '480px',
+      },
     },
   },
   plugins: [],

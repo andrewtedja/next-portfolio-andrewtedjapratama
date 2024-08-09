@@ -1,9 +1,12 @@
 import React from "react";
+import Particle from "./Particle";
 
 const Contacts = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-[90vh] bg-[#FCFCFC] py-16"> 
-        
+        <div className="flex flex-col items-center justify-center min-h-[90vh] py-16 z-[100]"> 
+            <div className="z-[100]">
+                <Particle />
+            </div>
             <h2 className="text-[48px] font-light font-[Epilogue] text-gray-800">Let&apos;s work</h2>
             <h2 className="text-[48px] font-light font-[Epilogue] mb-16 text-gray-800">together</h2>
             <span className="relative font-bold text-[36px] font-[Epilogue] underline mb-10 tracking-wide">andrewtedj@gmail.com</span>

@@ -54,7 +54,7 @@ const Projects = () => {
                             <h3 className="text-xl font-semibold text-black mb-2">Whispy Chat App</h3>
                             <p className="text-gray-600 mb-4">In Progress . . .  (Coming soon)</p>
                             <div className="flex mt-auto justify-between">
-                                <a href="#projects" className="px-4 py-2 bg-gray-400 text-white rounded cursor-not-allowed">Live Demo</a>
+                                <a href="#projects" className="px-4 py-2 bg-[#adccff] text-white rounded cursor-not-allowed">Live Demo</a>
                                 <a href="https://github.com/Fozzzzy/whispy-chat-app" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700 transition duration-200">GitHub</a>
                             </div>
                         </div>

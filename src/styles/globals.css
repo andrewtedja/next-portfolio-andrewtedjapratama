@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 body {
-    background-color: #FCFCFC;
+    background-color: #FFFFFF;
     font-family: 'Poppins';
 }
 
@@ -38,6 +38,6 @@ body {
     }
 
     .projects-card {
-        @apply bg-white shadow-lg rounded-lg overflow-hidden border-[1px] border-gray-300 flex flex-col transition-all duration-1000 hover:scale-105
+        @apply bg-white h-[620px] shadow-lg rounded-lg overflow-hidden border-[1px] border-gray-300 flex flex-col transition-all duration-1000 hover:scale-105
     }
 }

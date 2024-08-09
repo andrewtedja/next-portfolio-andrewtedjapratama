@@ -7,7 +7,7 @@ const Skills = () => {
                 <h2 className="text-4xl font-bold text-center text-black mb-2">Skills</h2>
                 <p className="text-center text-[#3B82F6] mb-12">My Technical Abilities</p>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
                     {[
                         { src: "/skills-logos/python.png", alt: "Python", label: "Python" },
                         { src: "/skills-logos/HTML.png", alt: "HTML", label: "HTML" },
