@@ -12,13 +12,13 @@ body {
 
 @layer components {
     .nav-link {
-        @apply relative font-medium text-black hover:text-blue-500 transition-colors text-[17px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px]
+        @apply relative font-medium text-black hover:text-blue-500 transition-colors text-[16px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px]
         after:bg-blue-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden cursor-pointer
     }
 
     .nav-link-mobile {
         @apply relative mb-[2rem] font-medium text-black hover:text-blue-500 transition-colors text-[20px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px]
-        after:bg-blue-500 after:w-[250px] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-top-left cursor-pointer
+        after:bg-blue-500 after:w-[250px] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-1000 after:origin-top-left cursor-pointer
     }
 
     .nav-link.active, .nav-link-mobile.active {
@@ -26,6 +26,14 @@ body {
     }
 
     .hero-name {
-        font-family: 'Epilogue';
+        font-family: 'Poppins';
+    }
+
+    .skills-container {
+        @apply bg-white shadow-lg rounded-lg overflow-hidden border-[1px] border-black flex items-center p-4 transition-transform duration-300 hover:-translate-y-4
+    }
+
+    .hero-box {
+        @apply relative h-[330px] w-[330px] bg-[bottom] bg-[url('/profile2.png')] border-[1.5px] border-black bg-cover animate-animate transition-all duration-1000 ease-in-out
     }
 }

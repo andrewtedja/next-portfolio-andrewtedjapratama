@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Nav from "@/components/Nav"
 import Hero from "@/components/Hero"
 import MobileNav from "@/components/MobileNav";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 
 const HomePage = () => {
 
@@ -17,6 +19,8 @@ const HomePage = () => {
             <Nav openNav={openNav} closeNav={closeNav}/>
             {/* Section: Hero */}
             <Hero />
+            <Projects />
+            <Skills />
         </div>
     </div>
     )
