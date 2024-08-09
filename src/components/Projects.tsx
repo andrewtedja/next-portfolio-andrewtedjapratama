@@ -15,8 +15,8 @@ const Projects = () => {
                             <h3 className="text-xl font-semibold text-black mb-2">SEA Salon</h3>
                             <p className="text-gray-600 mb-4">This project is a web-based reservation system for SEA Salon, with features such as reservation, customer reviews, and admin dashboard. I built it with HTML, CSS, JavaScript, and also Firebase for authentication</p>
                             <div className="flex mt-auto justify-between">
-                                <a href="#" className="px-4 py-2 bg-[#3B82F6] text-white rounded hover:bg-blue-600 transition duration-300">Live Demo</a>
-                                <a href="#" className="px-4 py-2 bg-gray-200 text-black rounded hover:bg-gray-300 transition duration-300">GitHub</a>
+                                <a href="#" className="px-4 py-2 bg-[#3B82F6] text-white rounded hover:bg-blue-600 transition duration-200">Live Demo</a>
+                                <a href="#" className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700 transition duration-200">GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -28,8 +28,8 @@ const Projects = () => {
                             <h3 className="text-xl font-semibold text-black mb-2">Movie Search App</h3>
                             <p className="text-gray-600 mb-4">A react project used for searching movies and managing your favorite movie list. I built this using the OMDB API to fetch movie data and allows users to add or remove movies from their favorites list.</p>
                             <div className="flex mt-auto justify-between">
-                                <a href="#" className="px-4 py-2 bg-[#3B82F6] text-white rounded hover:bg-blue-600 transition duration-300">Live Demo</a>
-                                <a href="#" className="px-4 py-2 bg-gray-200 text-black rounded hover:bg-gray-300 transition duration-300">GitHub</a>
+                                <a href="#" className="px-4 py-2 bg-[#3B82F6] text-white rounded hover:bg-blue-600 transition duration-200">Live Demo</a>
+                                <a href="#" className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700 transition duration-200">GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -41,8 +41,8 @@ const Projects = () => {
                             <h3 className="text-xl font-semibold text-black mb-2">Todo List App</h3>
                             <p className="text-gray-600 mb-4">This project is used to organize and plan todos for productivity. I built this as my first project to part of learning HTML, CSS, and Javascript.</p>
                             <div className="flex mt-auto justify-between">
-                                <a href="#" className="px-4 py-2 bg-[#3B82F6] text-white rounded hover:bg-blue-600 transition duration-300">Live Demo</a>
-                                <a href="#" className="px-4 py-2 bg-gray-200 text-black rounded hover:bg-gray-300 transition duration-300">GitHub</a>
+                                <a href="#" className="px-4 py-2 bg-[#3B82F6] text-white rounded hover:bg-blue-600 transition duration-200">Live Demo</a>
+                                <a href="#" className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700 transition duration-200">GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const Projects = () => {
                             <p className="text-gray-600 mb-4">In Progress . . .  (Coming soon)</p>
                             <div className="flex mt-auto justify-between">
                                 <a href="#projects" className="px-4 py-2 bg-gray-400 text-white rounded cursor-not-allowed">Live Demo</a>
-                                <a href="https://github.com/Fozzzzy/whispy-chat-app.git" className="px-4 py-2 bg-gray-200 text-black rounded hover:bg-gray-300 transition duration-300">GitHub</a>
+                                <a href="https://github.com/Fozzzzy/whispy-chat-app.git" className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700 transition duration-200">GitHub</a>
                             </div>
                         </div>
                     </div>
