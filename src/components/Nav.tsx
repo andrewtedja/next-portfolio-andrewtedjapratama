@@ -1,11 +1,13 @@
+// Nav.tsx
 import React, { useState, useEffect } from 'react';
 import { Bars3Icon } from "@heroicons/react/20/solid";
 
 interface Props {
   openNav: () => void;
+  closeNav: () => void; 
 }
 
-const Nav = ({ openNav }: Props) => {
+const Nav = ({ openNav, closeNav }: Props) => {
   const [activeNav, setActiveNav] = useState('#home');
   const [isScrolled, setIsScrolled] = useState(false);
 
