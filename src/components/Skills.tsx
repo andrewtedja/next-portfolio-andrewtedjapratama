@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skills = () => {
     return (
-        <div className="min-h-[90vh] bg-[#FCFCFC] py-16">
+        <div className="min-h-[90vh] bg-[#f9fafb] py-16">
             <div className="container max-w-[85%] mx-auto px-4">
                 <h2 className="text-4xl font-bold text-center text-black mb-2">Skills</h2>
                 <p className="text-center text-[#3B82F6] mb-12">My Technical Abilities</p>
@@ -22,12 +22,12 @@ const Skills = () => {
                         { src: "/skills-logos/bootstrap.png", alt: "Bootstrap", label: "Boostrap" },
                         { src: "/skills-logos/tailwind.png", alt: "TailwindCSS", label: "TailwindCSS" }
                     ].map((skill, index) => (
-                        <div key={index} className="skills-container">
-                            <div className="w-1/3 flex justify-center">
+                        <div key={index} className="skills-container py-6">
+                            <div className="w-1/4 flex justify-center">
                                 <img src={skill.src} alt={skill.alt} className="max-w-full max-h-full object-contain"/>
                             </div>
-                            <div className="w-2/3 pl-4">
-                                <h3 className="text-base text-[14px] font-medium text-black">{skill.label}</h3>
+                            <div className="w-3/4 pl-4">
+                                <h3 className="text-base text-[16px] font-medium text-black">{skill.label}</h3>
                             </div>
                         </div>
                     ))}
