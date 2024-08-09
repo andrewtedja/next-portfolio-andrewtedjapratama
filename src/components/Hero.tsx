@@ -3,18 +3,18 @@ import Particle from './Particle';
 import Box from './Box';
 
 const Hero = () => {
-    const splitName = (name) => {
+    const splitName = (name: string) => {
         return name.split('').map((letter, index) => (
             <span 
                 key={index} 
-                className="inline-block transition-transform duration-300 hover:text-blue-700"
+                className="inline-block transition-transform duration-300 hover:text-blue-700 "
             >
                 {letter}
             </span>
         ));
     };
 
-    const handleNavClick = (sectionId) => {
+    const handleNavClick = (sectionId: string) => {
         const section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
@@ -27,8 +27,8 @@ const Hero = () => {
                 <Particle />
             </div>
             <div className="hero-content min-w-[80%] grid grid-cols-[1fr, 1fr] z-[1]">
-                <div>
-                    <header>
+                <div className=''>
+                    <header className=''>
                         <h2 className="text-[16px] flex items-center">
                             <img className='h-[20px] w-[20px] mr-2' src='/wave.png' alt='Wave' />
                             Hello there! I am
