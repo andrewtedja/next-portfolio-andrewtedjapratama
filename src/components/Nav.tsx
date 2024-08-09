@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Bars3Icon } from "@heroicons/react/20/solid";
 import { Link } from 'react-scroll';
 
@@ -8,13 +8,31 @@ interface Props {
 
 const Nav = ({ openNav }: Props) => {
   const [activeNav, setActiveNav] = useState('#home');
-  
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const handleNavClick = (section: string) => {
     setActiveNav(section);
-  }
+  };
+
+  // Function to handle scroll event
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  // Add event listener on mount and remove on unmount
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="fixed top-0 w-full h-[10vh] bg-[#FCFCFC] z-10">
+    <header className={`fixed top-0 w-full h-[10vh] bg-[#FCFCFC] z-10 transition-shadow duration-300 ${isScrolled ? 'shadow-md bg-opacity-90' : ''}`}>
       <div className="max-w-[80%] mx-auto h-full flex items-center justify-between">
         <h1 className="text-3xl font-bold cursor-pointer">
           Andrew

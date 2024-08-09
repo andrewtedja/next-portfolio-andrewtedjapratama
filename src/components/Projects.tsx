@@ -9,7 +9,7 @@ const Projects = () => {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* SEA Salon */}
-                    <div className="bg-white shadow-lg rounded-lg overflow-hidden border-[1px] border-black flex flex-col">
+                    <div className="projects-card ">
                         <img src="/project-image/sea-salon.png" alt="SEA Salon" className="w-full h-48 object-cover" />
                         <div className="p-6 flex flex-col flex-grow">
                             <h3 className="text-xl font-semibold text-black mb-2">SEA Salon</h3>
@@ -22,7 +22,7 @@ const Projects = () => {
                     </div>
 
                     {/* Movie Search App */}
-                    <div className="bg-white shadow-lg rounded-lg overflow-hidden border-[1px] border-black flex flex-col">
+                    <div className="projects-card ">
                         <img src="/project-image/movie-search-app.png" alt="Movie Search App" className="w-full h-48 object-cover" />
                         <div className="p-6 flex flex-col flex-grow">
                             <h3 className="text-xl font-semibold text-black mb-2">Movie Search App</h3>
@@ -35,7 +35,7 @@ const Projects = () => {
                     </div>
 
                     {/* Todo List App */}
-                    <div className="bg-white shadow-lg rounded-lg overflow-hidden border-[1px] border-black flex flex-col">
+                    <div className="projects-card ">
                         <img src="/project-image/todo-app.png" alt="Todo List App" className="w-full h-48 object-cover" />
                         <div className="p-6 flex flex-col flex-grow">
                             <h3 className="text-xl font-semibold text-black mb-2">Todo List App</h3>
@@ -48,7 +48,7 @@ const Projects = () => {
                     </div>
 
                     {/* Whispy Chat App */}
-                    <div className="bg-white shadow-lg rounded-lg overflow-hidden border-[1px] border-black flex flex-col">
+                    <div className="projects-card ">
                         <img src="/project-image/whispy-chat-app.png" alt="Whispy Chat App" className="w-full h-48 object-cover" />
                         <div className="p-6 flex flex-col flex-grow">
                             <h3 className="text-xl font-semibold text-black mb-2">Whispy Chat App</h3>

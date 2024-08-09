@@ -30,10 +30,14 @@ body {
     }
 
     .skills-container {
-        @apply bg-white shadow-lg rounded-lg overflow-hidden border-[1px] border-black flex items-center p-4 transition-transform duration-300 hover:-translate-y-4
+        @apply bg-white shadow-md rounded-lg overflow-hidden border-[1px] border-black flex items-center p-4 transition-transform duration-200 hover:-translate-y-4
     }
 
     .hero-box {
-        @apply relative h-[330px] w-[330px] bg-[bottom] bg-[url('/profile2.png')] border-[1.5px] border-black bg-cover animate-animate transition-all duration-1000 ease-in-out
+        @apply relative h-[330px] w-[330px] bg-[bottom] bg-[url('/profile2.png')] border-[1.5px] border-black bg-cover animate-animate transition-all duration-500 ease-in-out
+    }
+
+    .projects-card {
+        @apply bg-white shadow-lg rounded-lg overflow-hidden border-[1px] border-gray-300 flex flex-col transition-all duration-1000 hover:scale-105
     }
 }
