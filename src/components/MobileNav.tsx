@@ -42,7 +42,7 @@ const MobileNav = ({nav, closeNav}: Props) => {
                 className={`fixed top-0 right-0 h-[100vh] w-[280px] z-[10000] bg-[#FCFCFC] shadow-left transform transition-transform duration-300 rounded ${navAnimation}`}
             >
                 <div className="h-[100vh] flex flex-col items-start ml-5">
-                    <ul className="flex flex-col mt-[5rem] space-y-4">
+                    <ul className="flex flex-col mt-[5rem] space-y-7">
                         <li>
                             <a
                                 href="#home"

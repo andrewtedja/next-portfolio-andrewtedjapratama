@@ -9,7 +9,7 @@ const Contacts = () => {
             </div>
             <h2 className="text-[48px] font-light font-[Epilogue] text-gray-800">Let&apos;s work</h2>
             <h2 className="text-[48px] font-light font-[Epilogue] mb-16 text-gray-800">together</h2>
-            <span className="relative font-bold text-[36px] font-[Epilogue] underline mb-10 tracking-wide">andrewtedj@gmail.com</span>
+            <span className="relative font-bold text-[24px] md:text-[36px] font-[Epilogue] underline mb-10 tracking-wide">andrewtedj@gmail.com</span>
             <div className="flex space-x-8">
                 <a href="https://github.com/Fozzzzy" className="text-blue-500 transition-transform hover:scale-125 active:opacity-70">
                     <svg className="w-[40px] h-[40px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
