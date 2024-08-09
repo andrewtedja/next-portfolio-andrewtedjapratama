@@ -32,3 +32,10 @@ Start the development server:
 
 ```bash
 npm run dev
+
+
+## Technologies used
+* Next.js
+* React 
+* TailwindCSS
+* Node.js
