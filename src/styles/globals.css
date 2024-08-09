@@ -34,7 +34,7 @@ body {
     }
 
     .hero-box {
-        @apply relative h-[330px] w-[330px] bg-[bottom] bg-[url('/profile2.png')] border-[1.5px] border-black bg-cover animate-animate transition-all duration-500 ease-in-out
+        @apply relative h-[330px] w-[330px] border-[1.5px] border-black bg-cover bg-center;
     }
 
     .projects-card {
