@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Bars3Icon } from "@heroicons/react/20/solid";
-import { Link } from 'react-scroll';
 
 interface Props {
   openNav: () => void;
@@ -10,11 +9,14 @@ const Nav = ({ openNav }: Props) => {
   const [activeNav, setActiveNav] = useState('#home');
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleNavClick = (section: string) => {
-    setActiveNav(section);
+  const handleNavClick = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setActiveNav(`#${sectionId}`);
+    }
   };
 
-  // Function to handle scroll event
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setIsScrolled(true);
@@ -23,7 +25,6 @@ const Nav = ({ openNav }: Props) => {
     }
   };
 
-  // Add event listener on mount and remove on unmount
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -44,52 +45,36 @@ const Nav = ({ openNav }: Props) => {
         <nav className="flex ml-auto">
           <ul className="flex space-x-11">
             <li>
-              <Link 
-                to="hero" 
-                smooth={true} 
-                duration={500} 
-                offset={-60}
-                className={`nav-link ${activeNav === '#home' ? 'active' : ''}`} 
-                onClick={() => handleNavClick('#home')}
+              <button 
+                className={`nav-link ${activeNav === '#hero' ? 'active' : ''}`} 
+                onClick={() => handleNavClick('hero')}
               >
                 Home
-              </Link>
+              </button>
             </li>
             <li>
-              <Link 
-                to="projects" 
-                smooth={true} 
-                duration={500} 
-                offset={-60}
+              <button 
                 className={`nav-link ${activeNav === '#projects' ? 'active' : ''}`} 
-                onClick={() => handleNavClick('#projects')}
+                onClick={() => handleNavClick('projects')}
               >
                 Projects
-              </Link>
+              </button>
             </li>
             <li>
-              <Link 
-                to="skills" 
-                smooth={true} 
-                duration={500} 
-                offset={-60} 
+              <button 
                 className={`nav-link ${activeNav === '#skills' ? 'active' : ''}`} 
-                onClick={() => handleNavClick('#skills')}
+                onClick={() => handleNavClick('skills')}
               >
                 Skills
-              </Link>
+              </button>
             </li>
             <li>
-              <Link 
-                to="resume" 
-                smooth={true} 
-                duration={500} 
-                offset={-60}
+              <button 
                 className={`nav-link ${activeNav === '#resume' ? 'active' : ''}`} 
-                onClick={() => handleNavClick('#resume')}
+                onClick={() => handleNavClick('resume')}
               >
                 Resume
-              </Link>
+              </button>
             </li>
           </ul>
           <div onClick={openNav}>

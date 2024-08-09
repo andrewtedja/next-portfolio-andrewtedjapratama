@@ -1,21 +1,24 @@
 import React from 'react';
 import Particle from './Particle';
 import Box from './Box';
-import { Link } from 'react-scroll';
 
 const Hero = () => {
     const splitName = (name) => {
         return name.split('').map((letter, index) => (
             <span 
                 key={index} 
-                className="inline-block transition-transform duration-300 hover:text-blue-700 "
+                className="inline-block transition-transform duration-300 hover:text-blue-700"
             >
                 {letter}
             </span>
         ));
     };
 
-    const handleNavClick = (section) => {
+    const handleNavClick = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
     return (
@@ -24,8 +27,8 @@ const Hero = () => {
                 <Particle />
             </div>
             <div className="hero-content min-w-[80%] grid grid-cols-[1fr, 1fr] z-[1]">
-                <div className=''>
-                    <header className=''>
+                <div>
+                    <header>
                         <h2 className="text-[16px] flex items-center">
                             <img className='h-[20px] w-[20px] mr-2' src='/wave.png' alt='Wave' />
                             Hello there! I am
@@ -42,16 +45,11 @@ const Hero = () => {
                             based in Indonesia
                             <img className="h-[25px] w-[25px] ml-1" src="/pin.png" alt="pin icon" />
                         </p>
-                        <button className='mt-4 px-7 py-3 bg-[#ffffff] border-[1px] border-[#3B82F6] text-[#3B82F6] font-normal hover:bg-[#3B82F6] hover:text-white transition duration-300 ease-in-out'> 
-                            <Link 
-                                to="contacts" 
-                                smooth={true} 
-                                duration={500} 
-                                offset={-60} 
-                                onClick={() => handleNavClick('#contacts')}
-                            >
-                                Get in touch
-                            </Link>   
+                        <button 
+                            className='mt-4 px-7 py-3 bg-[#ffffff] border-[1px] border-[#3B82F6] text-[#3B82F6] font-normal hover:bg-[#3B82F6] hover:text-white transition duration-300 ease-in-out' 
+                            onClick={() => handleNavClick('contacts')}
+                        >
+                            Get in touch
                         </button>
                     </header>
                 </div>
