@@ -2,7 +2,7 @@ import React from 'react';
 
 const About: React.FC = () => {
     return (
-        <div className="w-full h-screen bg-[#FCFCFC] mx-auto px-4 py-8 flex justify-center items-center overflow-y-hidden" data-aos="fade-up">
+        <div className="w-full min-h-screen bg-[#FCFCFC] px-4 py-8 flex flex-col justify-center items-center overflow-y-hidden" data-aos="fade-up">
             <div className="w-full max-w-6xl">
                 <h1 className="text-4xl font-light mb-8" data-aos="fade-down" data-aos-delay="100">
                     About Me
@@ -30,7 +30,7 @@ const About: React.FC = () => {
                             
                             <p className="flex items-start" data-aos="fade-up" data-aos-delay="600">
                                 <span className="text-xl mr-2">🎨</span>
-                                <span>I love learning new technologies and focus myself in creating beautiful and pleasing experiences through the applications and websites I make</span>
+                                <span>I love learning new technologies and focus myself in creating beautiful and pleasing experiences through the applications and websites I make.</span>
                             </p>
                             
                             <div data-aos="fade-up" data-aos-delay="500">
@@ -63,4 +63,3 @@ const About: React.FC = () => {
 };
 
 export default About;
-    
