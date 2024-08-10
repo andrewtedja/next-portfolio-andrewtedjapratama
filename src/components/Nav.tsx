@@ -51,7 +51,7 @@ const Nav = ({ openNav, closeNav }: Props) => {
             <li>
               <button 
                 className={`nav-link ${activeNav === '#' ? 'active' : ''}`} 
-                onClick={() => handleNavClick('home')}
+                onClick={() => window.location.href = '#'}
               >
                 Home
               </button>
