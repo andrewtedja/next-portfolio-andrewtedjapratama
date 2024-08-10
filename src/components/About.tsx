@@ -33,7 +33,7 @@ const About: React.FC = () => {
                                 <span>I love learning new technologies and focus myself in creating beautiful and pleasing experiences through the applications and websites I make</span>
                             </p>
                             
-                            <div data-aos="fade-up" data-aos-delay="700">
+                            <div data-aos="fade-up" data-aos-delay="500">
                                 <p className="flex items-start mb-2">
                                     <span className="text-xl mr-2">🌐</span>
                                     <span className="font-semibold">Organizations:</span>
@@ -44,7 +44,7 @@ const About: React.FC = () => {
                                 </div>
                             </div>
                             
-                            <div data-aos="fade-up" data-aos-delay="800">
+                            <div data-aos="fade-up">
                                 <p className="flex items-start mb-2">
                                     <span className="text-xl mr-2">🌟</span>
                                     <span className="font-semibold">Achievements:</span>
@@ -63,3 +63,4 @@ const About: React.FC = () => {
 };
 
 export default About;
+    
