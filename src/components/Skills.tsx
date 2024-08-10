@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skills = () => {
     return (
-        <div className="min-h-[90vh] bg-white py-16" data-aos="fade-up">
+        <div className="min-h-[90vh] bg-white py-16 flex flex-col items-center justify-center" data-aos="fade-up">
             <div className="container max-w-[85%] mx-auto px-4">
                 <h2 className="text-4xl font-bold text-center text-black mb-2" data-aos="fade-down">Skills</h2>
                 <p className="text-center text-[#3B82F6] mb-12" data-aos="fade-down">My Technical Abilities</p>
