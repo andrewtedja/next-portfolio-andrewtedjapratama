@@ -24,7 +24,7 @@ const HomePage = () => {
     }, []);
 
     return (
-        <div className="overflow-x-hidden">
+        <div className="overflow-hidden">
             <Head>
                 <link
                     rel="preload"

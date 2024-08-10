@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
     };
 
     return (
-        <div className="relative h-[90vh] flex flex-col justify-center items-center overflow-hidden p-4">
+        <div className="relative h-[90vh] flex flex-col justify-center items-center overflow-hidden p-4 overflow-hidden">
             <div className="absolute inset-0 z-[-1]">
                 <Particle />
             </div>
