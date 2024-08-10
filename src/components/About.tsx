@@ -50,7 +50,7 @@ const About: React.FC = () => {
                                     <span className="font-semibold">Achievements:</span>
                                 </p>
                                 <ul className="list-disc list-inside pl-6 space-y-1">
-                                    <li>1st place in Sandbox Business Plan Competition 2022 (Prasetya Mulya University)</li>
+                                    <li>1st place Sandbox Business Plan Competition 2022 conducted by SMAK Penabur Gading Serpong and Prasetya Mulya University</li>
                                     <li>Certified Web Development path graduate as a member in Google Developers Student Clubs ITB (GDSC ITB)</li>
                                 </ul>
                             </div>

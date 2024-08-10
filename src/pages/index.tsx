@@ -43,7 +43,7 @@ const HomePage = () => {
                 <Nav openNav={openNav} closeNav={closeNav} />
                 
                 <div className="pt-[10vh]">
-                    <div id="hero">
+                    <div id="home">
                         <Hero />
                     </div>
                     <div id="projects">
