@@ -22,7 +22,8 @@ const Skills = () => {
                         { src: "/skills-logos/bootstrap.png", alt: "Bootstrap", label: "Boostrap" },
                         { src: "/skills-logos/tailwind.png", alt: "TailwindCSS", label: "TailwindCSS" }
                     ].map((skill, index) => (
-                        <div key={index} className="skills-container py-6" data-aos="fade-up" data-aos-delay={index * 50}>
+                    <div key={index} className="overflow-hidden" data-aos="fade-up" data-aos-delay={index * 50}>
+                        <div className="skills-container h-[100px] hover:-translate-y-4 transition-transform duration-300 ease-in-out mt-[1rem]">
                             <div className="w-1/4 flex justify-center">
                                 <img src={skill.src} alt={skill.alt} className="max-w-full max-h-full object-contain"/>
                             </div>
@@ -30,6 +31,8 @@ const Skills = () => {
                                 <h3 className="text-base text-[12px] md:text-[16px] font-medium text-black">{skill.label}</h3>
                             </div>
                         </div>
+                    </div>
+
                     ))}
                 </div>
             </div>

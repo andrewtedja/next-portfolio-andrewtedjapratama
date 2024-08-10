@@ -50,8 +50,8 @@ const Nav = ({ openNav, closeNav }: Props) => {
           <ul className="flex space-x-11">
             <li>
               <button 
-                className={`nav-link ${activeNav === '#' ? 'active' : ''}`} 
-                onClick={() => window.location.href = '#'}
+                className={`nav-link ${activeNav === '#home' ? 'active' : ''}`} 
+                onClick={() => handleNavClick('home')}
               >
                 Home
               </button>
