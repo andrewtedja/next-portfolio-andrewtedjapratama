@@ -10,6 +10,9 @@ Welcome to my personal portfolio website! This project is designed to showcase m
 - [Installation](#installation)
 - [Running the Development Server](#running-the-development-server)
 - [Technologies Used](#technologies-used)
+- [Bonus Done](#bonus-done)
+- [Challenges Faced](#challenges-faced)
+
 
 ## How to run
 
