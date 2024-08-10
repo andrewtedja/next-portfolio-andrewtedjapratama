@@ -1,6 +1,6 @@
-// Nav.tsx
 import React, { useState, useEffect } from 'react';
 import { Bars3Icon } from "@heroicons/react/20/solid";
+import Link from 'next/link'; 
 
 interface Props {
   openNav: () => void;
@@ -11,6 +11,7 @@ const Nav = ({ openNav, closeNav }: Props) => {
   const [activeNav, setActiveNav] = useState('#home');
   const [isScrolled, setIsScrolled] = useState(false);
 
+  // Function for smooth scrolling
   const handleNavClick = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -27,6 +28,7 @@ const Nav = ({ openNav, closeNav }: Props) => {
     }
   };
 
+  // Function for adding shadow to navbar when scrolled down
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -48,10 +50,18 @@ const Nav = ({ openNav, closeNav }: Props) => {
           <ul className="flex space-x-11">
             <li>
               <button 
-                className={`nav-link ${activeNav === '#hero' ? 'active' : ''}`} 
-                onClick={() => handleNavClick('hero')}
+                className={`nav-link ${activeNav === '#home' ? 'active' : ''}`} 
+                onClick={() => handleNavClick('home')}
               >
                 Home
+              </button>
+            </li>
+            <li>
+              <button 
+                className={`nav-link ${activeNav === '#about' ? 'active' : ''}`} 
+                onClick={() => handleNavClick('about')}
+              >
+                About
               </button>
             </li>
             <li>
@@ -68,14 +78,6 @@ const Nav = ({ openNav, closeNav }: Props) => {
                 onClick={() => handleNavClick('skills')}
               >
                 Skills
-              </button>
-            </li>
-            <li>
-              <button 
-                className={`nav-link ${activeNav === '#resume' ? 'active' : ''}`} 
-                onClick={() => handleNavClick('resume')}
-              >
-                Resume
               </button>
             </li>
           </ul>

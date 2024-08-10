@@ -1,12 +1,12 @@
-import { XMarkIcon } from '@heroicons/react/20/solid'
-import React, { useEffect, useRef, useState } from 'react'
+import { XMarkIcon } from '@heroicons/react/20/solid';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface Props {
     nav: boolean;
     closeNav: () => void;
 }
 
-const MobileNav = ({nav, closeNav}: Props) => {
+const MobileNav = ({ nav, closeNav }: Props) => {
     const navAnimation = nav ? 'translate-x-0' : 'translate-x-[100%]';
     const overlayVisibility = nav ? 'block' : 'hidden';
     const navRef = useRef<HTMLDivElement>(null);
@@ -30,7 +30,7 @@ const MobileNav = ({nav, closeNav}: Props) => {
     useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside);
         return () => document.removeEventListener('mousedown', handleClickOutside);
-    }, [handleClickOutside]);
+    }, []);
 
     return (
         <>
@@ -56,6 +56,15 @@ const MobileNav = ({nav, closeNav}: Props) => {
                         </li>
                         <li>
                             <a
+                                href="#about"
+                                className={`nav-link-mobile ${activeNav === '#about' ? 'active' : ''}`}
+                                onClick={() => handleNavClick('#about')}
+                            >
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a
                                 href="#projects"
                                 className={`nav-link-mobile ${activeNav === '#projects' ? 'active' : ''}`}
                                 onClick={() => handleNavClick('#projects')}
@@ -72,15 +81,6 @@ const MobileNav = ({nav, closeNav}: Props) => {
                                 Skills
                             </a>
                         </li>
-                        <li>
-                            <a
-                                href="#resume"
-                                className={`nav-link-mobile ${activeNav === '#resume' ? 'active' : ''}`}
-                                onClick={() => handleNavClick('#resume')}
-                            >
-                                Resume
-                            </a>
-                        </li>
                     </ul>
                 </div>  
                 <div onClick={closeNav} className="absolute cursor-pointer top-[1.5rem] left-[1rem] w-[2rem] h-[2rem] text-black">
@@ -88,7 +88,7 @@ const MobileNav = ({nav, closeNav}: Props) => {
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default MobileNav
+export default MobileNav;
