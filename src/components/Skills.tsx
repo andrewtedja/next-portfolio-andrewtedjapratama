@@ -27,7 +27,7 @@ const Skills = () => {
                                 <img src={skill.src} alt={skill.alt} className="max-w-full max-h-full object-contain"/>
                             </div>
                             <div className="w-3/4 pl-4">
-                                <h3 className="text-base text-[16px] font-medium text-black">{skill.label}</h3>
+                                <h3 className="text-base text-[12px] md:text-[16px] font-medium text-black">{skill.label}</h3>
                             </div>
                         </div>
                     ))}
