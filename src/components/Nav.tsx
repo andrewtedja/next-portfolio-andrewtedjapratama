@@ -39,7 +39,7 @@ const Nav = ({ openNav, closeNav }: Props) => {
   return (
     <header className={`fixed top-0 w-full h-[10vh] bg-[#FFFFFF] z-10 transition-shadow duration-300 ${isScrolled ? 'shadow-md bg-opacity-90' : ''}`}>
       <div className="max-w-[80%] mx-auto h-full flex items-center justify-between">
-        <h1 className="text-3xl font-bold cursor-pointer">
+        <h1 className="text-3xl font-bold cursor-pointer" onClick={() => window.location.href = '#'}>
           Andrew
           <span className="text-blue-500 text-4xl">
             .
@@ -50,7 +50,7 @@ const Nav = ({ openNav, closeNav }: Props) => {
           <ul className="flex space-x-11">
             <li>
               <button 
-                className={`nav-link ${activeNav === '#home' ? 'active' : ''}`} 
+                className={`nav-link ${activeNav === '#' ? 'active' : ''}`} 
                 onClick={() => handleNavClick('home')}
               >
                 Home
