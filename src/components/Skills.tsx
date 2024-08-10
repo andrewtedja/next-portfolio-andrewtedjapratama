@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skills = () => {
     return (
-        <div className="min-h-[90vh] bg-[#f9fafb] py-16">
+        <div className="min-h-[90vh] bg-white py-16">
             <div className="container max-w-[85%] mx-auto px-4">
                 <h2 className="text-4xl font-bold text-center text-black mb-2">Skills</h2>
                 <p className="text-center text-[#3B82F6] mb-12">My Technical Abilities</p>

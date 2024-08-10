@@ -4,7 +4,7 @@ import Particle from "./Particle";
 const Contacts = () => {
     return (
         <div className="flex flex-col items-center justify-center min-h-[90vh] py-16 z-[100]"> 
-            <div className="z-[100]">
+            <div className="z-[100] absolute">
                 <Particle />
             </div>
             <h2 className="text-[48px] font-light font-[Epilogue] text-gray-800">Let&apos;s work</h2>
