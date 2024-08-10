@@ -1,5 +1,5 @@
+import Head from 'next/head';
 import React, { useEffect, useState } from "react";
-// import AOS styles
 import AOS from "aos";
 import "aos/dist/aos.css"; 
 
@@ -11,15 +11,11 @@ import Skills from "@/components/Skills";
 import Contacts from "@/components/Contacts";
 import About from "@/components/About";
 
-
-
-
 const HomePage = () => {
     const [nav, setNav] = useState(false);
     const openNav = () => setNav(true);
     const closeNav = () => setNav(false);
 
-     // AOS scroll animation
     useEffect(() => {
         AOS.init({
             duration: 1000, 
@@ -27,34 +23,45 @@ const HomePage = () => {
         });
     }, []);
 
-
     return (
-    <div className="overflow-x-hidden">
-        <div>
-            {/* Nav */}
-            <MobileNav nav={nav} closeNav={closeNav}/>
-            <Nav openNav={openNav} closeNav={closeNav}/>
-            
-            <div className="pt-[10vh]">
-                <div id="hero">
-                    <Hero />
-                </div>
-                <div id="projects">
-                    <Projects />
-                </div>
-                <div id="skills">
-                    <Skills />
-                </div>
-                <div id="about">
-                    <About />
-                </div>
-                <div id="contacts">
-                    <Contacts />
+        <div className="overflow-x-hidden">
+            <Head>
+                <link
+                    rel="preload"
+                    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+                    as="style"
+                />
+                <link
+                    rel="preload"
+                    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap"
+                    as="style"
+                />
+            </Head>
+            <div>
+                {/* Nav */}
+                <MobileNav nav={nav} closeNav={closeNav} />
+                <Nav openNav={openNav} closeNav={closeNav} />
+                
+                <div className="pt-[10vh]">
+                    <div id="hero">
+                        <Hero />
+                    </div>
+                    <div id="projects">
+                        <Projects />
+                    </div>
+                    <div id="skills">
+                        <Skills />
+                    </div>
+                    <div id="about">
+                        <About />
+                    </div>
+                    <div id="contacts">
+                        <Contacts />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    )
+    );
 }
 
 export default HomePage;
