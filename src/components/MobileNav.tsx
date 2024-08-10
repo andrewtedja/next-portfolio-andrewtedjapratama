@@ -14,12 +14,14 @@ const MobileNav = ({nav, closeNav}: Props) => {
 
     const [activeNav, setActiveNav] = useState('#home');
 
+    // Closes sidebar when clicked outside of the nav
     const handleClickOutside = (event: MouseEvent) => {
         if (navRef.current && !navRef.current.contains(event.target as Node) && overlayRef.current && !overlayRef.current.contains(event.target as Node)) {
             closeNav();
         }
     };
 
+    // Handle section navigation
     const handleNavClick = (section: string) => {
         setActiveNav(section);
         closeNav();

@@ -3,6 +3,7 @@ import Particle from './Particle';
 import Box from './Box';
 
 const Hero: React.FC = () => {
+    // Function for splitting alphabet in header name
     const splitName = (name: string) => {
         return name.split('').map((letter, index) => (
             <span 
@@ -14,6 +15,7 @@ const Hero: React.FC = () => {
         ));
     };
 
+    // Function for smooth scrolling
     const handleNavClick = (sectionId: string) => {
         const section = document.getElementById(sectionId);
         if (section) {
