@@ -2,10 +2,10 @@ import React from 'react';
 
 const Skills = () => {
     return (
-        <div className="min-h-[90vh] bg-white py-16">
+        <div className="min-h-[90vh] bg-white py-16" data-aos="fade-up">
             <div className="container max-w-[85%] mx-auto px-4">
-                <h2 className="text-4xl font-bold text-center text-black mb-2">Skills</h2>
-                <p className="text-center text-[#3B82F6] mb-12">My Technical Abilities</p>
+                <h2 className="text-4xl font-bold text-center text-black mb-2" data-aos="fade-down">Skills</h2>
+                <p className="text-center text-[#3B82F6] mb-12" data-aos="fade-down">My Technical Abilities</p>
                 
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
                     {[
@@ -22,7 +22,7 @@ const Skills = () => {
                         { src: "/skills-logos/bootstrap.png", alt: "Bootstrap", label: "Boostrap" },
                         { src: "/skills-logos/tailwind.png", alt: "TailwindCSS", label: "TailwindCSS" }
                     ].map((skill, index) => (
-                        <div key={index} className="skills-container py-6">
+                        <div key={index} className="skills-container py-6" data-aos="fade-up" data-aos-delay={index * 50}>
                             <div className="w-1/4 flex justify-center">
                                 <img src={skill.src} alt={skill.alt} className="max-w-full max-h-full object-contain"/>
                             </div>

@@ -1,4 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+// import AOS styles
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import MobileNav from "@/components/MobileNav";
@@ -7,10 +11,22 @@ import Skills from "@/components/Skills";
 import Contacts from "@/components/Contacts";
 import About from "@/components/About";
 
+
+
+
 const HomePage = () => {
     const [nav, setNav] = useState(false);
     const openNav = () => setNav(true);
     const closeNav = () => setNav(false);
+
+     // AOS scroll animation
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, 
+            once: true, 
+        });
+    }, []);
+
 
     return (
     <div className="overflow-x-hidden">
