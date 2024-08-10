@@ -1,17 +1,25 @@
 # Personal Website
+
 > Portfolio - Andrew Tedjapratama
 
-Welcome to my personal portfolio website!
+Welcome to my personal portfolio website! This project is designed to showcase my skills, projects, and experiences as a developer.
 
-## Live Demo
+## Table of Contents
 
-You can access the deployed website by visiting this link:  [Personal Portfolio - Andrew Tedjapratama](https://next-portfolio-andrewtedjapratama.vercel.app/)
+- [Live Demo](#live-demo)
+- [Installation](#installation)
+- [Running the Development Server](#running-the-development-server)
+- [Technologies Used](#technologies-used)
 
-## Getting Started
+## How to run
 
-To run the website locally, follow these steps:
+### Live Demo
+You can access the deployed website by visiting this link: [Personal Portfolio - Andrew Tedjapratama](https://next-portfolio-andrewtedjapratama.vercel.app/)
+
+or
 
 ### Installation
+To run the website locally, follow these steps:
 
 1. **Clone the repository:**
 
@@ -26,12 +34,13 @@ To run the website locally, follow these steps:
     npm install
 ```
 
-### Running the Development Server
+## Running the Development Server
 
 Start the development server:
 
 ```bash
 npm run dev
+
 ```
 
 ## Technologies used
@@ -39,3 +48,16 @@ npm run dev
 * React 
 * TailwindCSS
 * Node.js
+
+
+## Bonus done:
+* Deployment: Selesai
+* Tampilan responsif: Selesai
+* Penggunaan Basis data atau CMS: Tidak dikerjakan
+* Kreativitas: Selesai
+
+## Challenged faced:
+I see this task as an opportunity to learn Next.js and Tailwind CSS, so for the first time learning them and still new with React, I encountered several challenges such as:
+* Responsive design and styling with TailwindCSS
+* State management and component structuring with React 
+* Deployment using Next.Js
