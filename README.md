@@ -65,4 +65,5 @@ I see this task as an opportunity to learn Next.js and Tailwind CSS, so for the 
 * State management and component structuring with React 
 * Deployment using Next.Js
 
-### Andrew Tedjapratama - NIM 19623111
+## Identitas pembuat
+### Andrew Tedjapratama - NIM TPB 19623111 - NIM JURUSAN 13523148
