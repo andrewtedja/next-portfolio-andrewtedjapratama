@@ -1,6 +1,6 @@
 # Personal Website
 
-> Portfolio - Andrew Tedjapratama
+> Portfolio - Andrew Tedjapratama 
 
 Welcome to my personal portfolio website! This project is designed to showcase my skills, projects, and experiences as a developer.
 
@@ -64,3 +64,5 @@ I see this task as an opportunity to learn Next.js and Tailwind CSS, so for the 
 * Responsive design and styling with TailwindCSS
 * State management and component structuring with React 
 * Deployment using Next.Js
+
+### Andrew Tedjapratama - NIM 19623111
