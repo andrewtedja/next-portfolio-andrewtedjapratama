@@ -62,6 +62,16 @@ const Hero: React.FC = () => {
 								alt="Pin icon"
 							/>
 						</p>
+						<p className="text-[14px] md:text-[16px] flex items-center justify-center md:justify-start">
+							<span>
+								Driven to Make a Difference, one app at a time.
+							</span>
+							<img
+								className="h-[20px] w-[20px] md:h-[25px] md:w-[25px] ml-2"
+								src="/rocket.png"
+								alt="Rocket icon"
+							/>
+						</p>
 
 						<div className="flex justify-center md:justify-start">
 							<button
