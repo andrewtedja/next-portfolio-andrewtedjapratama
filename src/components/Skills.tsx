@@ -104,7 +104,7 @@ const Skills = () => {
 							data-aos="fade-up"
 							data-aos-delay={index * 50}
 						>
-							<div className="skills-container h-[100px] hover:-translate-y-4 transition-transform duration-300 ease-in-out mt-[1rem]">
+							<div className="skills-container h-[100px] transition-transform duration-300 ease-in-out mt-[1rem]">
 								<div className="w-1/4 flex justify-center">
 									<img
 										src={skill.src}

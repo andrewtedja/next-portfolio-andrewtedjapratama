@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Particle from "./Particle";
 import Box from "./Box";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
 	// Function for splitting alphabet in header name
@@ -35,10 +36,13 @@ const Hero: React.FC = () => {
 				>
 					<header>
 						<h2 className="text-[14px] md:text-[16px] flex justify-center md:justify-start items-center mb-2 md:mb-0">
-							<img
-								className="h-[18px] w-[18px] md:h-[20px] md:w-[20px] mr-2"
+							<Image
+								className="mr-2"
 								src="/wave.png"
 								alt="Wave"
+								width={20}
+								height={20}
+								sizes="(min-width: 768px) 20px, 18px"
 							/>
 							Hello there! I am
 						</h2>
