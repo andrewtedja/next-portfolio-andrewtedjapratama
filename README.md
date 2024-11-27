@@ -10,9 +10,6 @@ Welcome to my personal portfolio website! This project is designed to showcase m
 - [Installation](#installation)
 - [Running the Development Server](#running-the-development-server)
 - [Technologies Used](#technologies-used)
-- [Bonus Done](#bonus-done)
-- [Challenges Faced](#challenges-faced)
-
 
 ## How to run
 
@@ -60,7 +57,6 @@ npm run dev
 * Kreativitas: Selesai
 
 ## Challenged faced:
-I see this task as an opportunity to learn Next.js and Tailwind CSS, so for the first time learning them and still new with React, I encountered several challenges such as:
 * Responsive design and styling with TailwindCSS
 * State management and component structuring with React 
 * Deployment using Next.Js
