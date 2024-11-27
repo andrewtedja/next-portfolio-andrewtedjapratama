@@ -59,7 +59,7 @@ npm run dev
 ## Challenged faced:
 * Responsive design and styling with TailwindCSS
 * State management and component structuring with React 
-* Deployment using Next.Js
+* Deployment using Vercel and Next.Js
 
 ## Identitas pembuat
 ### Andrew Tedjapratama - NIM TPB 19623111 - NIM JURUSAN 13523148
