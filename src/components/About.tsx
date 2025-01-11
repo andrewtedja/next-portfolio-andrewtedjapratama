@@ -23,7 +23,7 @@ const About: React.FC = () => {
 					>
 						<img
 							className="w-full max-w-xs shadow-lg"
-							src="/profile3.png"
+							src="/profile2.png"
 							alt="Andrew Tedjapratama"
 						/>
 					</div>
